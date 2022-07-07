@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../shared/theme.dart';
 
 class FeedPage extends StatefulWidget {
   const FeedPage({Key? key}) : super(key: key);
