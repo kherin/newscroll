@@ -12,7 +12,7 @@ class WelcomePage extends StatefulWidget {
 class _WelcomePageState extends State<WelcomePage> {
   @override
   Widget build(BuildContext context) {
-    Future.delayed(const Duration(milliseconds: 1500), () {
+    Future.delayed(const Duration(milliseconds: 2500), () {
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => const FeedPage()),
