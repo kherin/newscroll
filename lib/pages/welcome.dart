@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rive/rive.dart';
-import './feed.dart';
+import '../shared/constants.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({Key? key}) : super(key: key);
@@ -12,23 +11,26 @@ class WelcomePage extends StatefulWidget {
 class _WelcomePageState extends State<WelcomePage> {
   @override
   Widget build(BuildContext context) {
-    Future.delayed(const Duration(milliseconds: 2500), () {
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => const FeedPage()),
-      );
-    });
     return Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: const <Widget>[
-          Expanded(
-            flex: 2,
-            child: RiveAnimation.asset('assets/animations/newscroll.riv'),
-          ),
+        children: <Widget>[
           Expanded(
             flex: 1,
-            child: RiveAnimation.asset('assets/animations/title_animation.riv'),
+            child: Container(
+              color: const Color.fromRGBO(255, 244, 235, 1.0),
+              child: Center(
+                child: Text(
+                  '$APP_NAME.',
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    fontSize: 50,
+                    fontFamily: 'GowunBatang',
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
           )
         ],
       ),
