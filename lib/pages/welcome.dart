@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:newscroll/widgets/app_title.dart';
 import '../shared/constants.dart';
 
 class WelcomePage extends StatefulWidget {
@@ -18,17 +19,9 @@ class _WelcomePageState extends State<WelcomePage> {
           Expanded(
             flex: 1,
             child: Container(
-              color: const Color.fromRGBO(255, 244, 235, 1.0),
-              child: Center(
-                child: Text(
-                  '$APP_NAME.',
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
-                    fontSize: 50,
-                    fontFamily: 'GowunBatang',
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
+              color: MAIN_BACKGROUND_COLOR,
+              child: const Center(
+                child: AppTitle(fontSize: 50),
               ),
             ),
           )
