@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 
 // models
 import '../models/news.dart';
-
 // constants
 import '../shared/constants.dart';
+// widgets
+import '../widgets/tagged.dart';
 
 class NewsCard extends StatefulWidget {
   final NewsModel news;
@@ -23,8 +24,8 @@ class _NewsCardState extends State<NewsCard> {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15.0),
       ),
-      child: Center(
-        child: Text(widget.news.id),
+      child: Column(
+        children: <Widget>[Tagged(TagType.primary, 'ki_news', 'fr')],
       ),
     );
   }
