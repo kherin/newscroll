@@ -3,19 +3,20 @@ import 'package:flutter/material.dart';
 import 'package:newscroll/models/newspaper.dart';
 import 'package:newscroll/models/news.dart';
 
+// Deck
+import '../widgets/deck.dart';
+
+// News Card
+import '../widgets/news_card.dart';
+
 class Stacked {
-  static generate(NewsPaperModel newspaper) {
+  static Widget generate(NewsPaperModel newspaper) {
     List<NewsModel> news = newspaper.news;
-    return Column(
-      children: <Widget>[
-        ...news.map((NewsModel article) {
-          return Text('Id: ${article.id}');
-        })
-      ],
-    );
+    List<Widget> cards = news.map((paper) => writeArticle(paper)).toList();
+    return Deck(cards);
   }
 
-  static writeArticle(NewsModel paper) {
-    return Text('Id: ${paper.id}');
+  static Widget writeArticle(NewsModel paper) {
+    return NewsCard(paper);
   }
 }

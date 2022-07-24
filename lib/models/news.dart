@@ -4,6 +4,7 @@ import '../shared/utils.dart';
 class NewsModel {
   final String id;
   final String text;
+  final String title;
   final String context;
   final String imageURL;
   final String cardType;
@@ -14,6 +15,7 @@ class NewsModel {
   const NewsModel(
     this.id,
     this.text,
+    this.title,
     this.context,
     this.imageURL,
     this.cardType,
@@ -26,6 +28,7 @@ class NewsModel {
     return NewsModel(
       json['id'] as String,
       json['text'] as String,
+      json['title'] as String,
       json['context'] as String,
       json['imageURL'] as String,
       json['cardType'] as String,

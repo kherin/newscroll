@@ -22,7 +22,7 @@ class _FeedPageState extends State<FeedPage> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: const <Widget>[
             Padding(
-              padding: EdgeInsets.fromLTRB(20, 30, 20, 0),
+              padding: EdgeInsets.fromLTRB(20, 30, 20, 30),
               child: AppTitle(fontSize: 40),
             ),
             Expanded(

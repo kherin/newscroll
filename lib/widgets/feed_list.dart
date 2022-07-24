@@ -28,9 +28,7 @@ class _FeedListState extends State<FeedList> {
             itemCount: snapshot.data.length,
             itemBuilder: (context, index) {
               NewsPaperModel newspaper = snapshot.data[index];
-              return Column(
-                children: <Widget>[Stacked.generate(newspaper)],
-              );
+              return Stacked.generate(newspaper);
             },
             separatorBuilder: (BuildContext context, int index) {
               NewsPaperModel newspaper = snapshot.data[index];
