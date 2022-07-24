@@ -1,4 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:newscroll/widgets/time_divider.dart';
+// api service
+import '../services/api.dart';
+// models
+import '../models/newspaper.dart';
+
+// widgets
+import 'stacked.dart';
 
 class FeedList extends StatefulWidget {
   const FeedList({Key? key}) : super(key: key);
@@ -8,23 +16,28 @@ class FeedList extends StatefulWidget {
 }
 
 class _FeedListState extends State<FeedList> {
-  final List<String> entries = List<String>.generate(20, (index) => '$index');
-
   @override
   Widget build(BuildContext context) {
-    return ListView.separated(
-      padding: const EdgeInsets.all(8),
-      itemCount: entries.length,
-      itemBuilder: (BuildContext context, int index) {
-        return Container(
-          height: 50,
-          color: Colors.white,
-          child: Center(
-            child: Text('Entry ${entries[index]}'),
-          ),
-        );
+    return FutureBuilder(
+      builder: (context, AsyncSnapshot snapshot) {
+        if (snapshot.connectionState == ConnectionState.none ||
+            snapshot.data == null) {
+          return Container();
+        }
+        return ListView.separated(
+            itemCount: snapshot.data.length,
+            itemBuilder: (context, index) {
+              NewsPaperModel newspaper = snapshot.data[index];
+              return Column(
+                children: <Widget>[Stacked.generate(newspaper)],
+              );
+            },
+            separatorBuilder: (BuildContext context, int index) {
+              NewsPaperModel newspaper = snapshot.data[index];
+              return TimeDivider(newspaper.publishedDate);
+            });
       },
-      separatorBuilder: (BuildContext context, int index) => const Divider(),
+      future: ApiService.getMockedNews(),
     );
   }
 }

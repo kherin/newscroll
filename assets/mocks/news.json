@@ -1,0 +1,60 @@
+[
+  {
+    "2022-07-24T07:02:43.000Z": [
+      {
+        "id": "1",
+        "text": "",
+        "context": "",
+        "imageURL": "",
+        "cardType": "sponsored",
+        "markedAsRead": "0",
+        "publishedDate": "2022-07-24T07:02:43.000Z",
+        "contentCategory": ""
+      },
+      {
+        "id": "2",
+        "text": "",
+        "context": "",
+        "imageURL": "",
+        "cardType": "sponsored",
+        "markedAsRead": "0",
+        "publishedDate": "2022-07-24T07:02:43.000Z",
+        "contentCategory": ""
+      },
+      {
+        "id": "3",
+        "text": "",
+        "context": "",
+        "imageURL": "",
+        "cardType": "sponsored",
+        "markedAsRead": "0",
+        "publishedDate": "2022-07-24T07:02:43.000Z",
+        "contentCategory": ""
+      }
+    ]
+  },
+  {
+    "2022-07-23T07:02:43.000Z": [
+      {
+        "id": "4",
+        "text": "",
+        "context": "",
+        "imageURL": "",
+        "cardType": "sponsored",
+        "markedAsRead": "0",
+        "publishedDate": "2022-07-23T07:02:43.000Z",
+        "contentCategory": ""
+      },
+      {
+        "id": "5",
+        "text": "",
+        "context": "",
+        "imageURL": "",
+        "cardType": "sponsored",
+        "markedAsRead": "0",
+        "publishedDate": "2022-07-23T07:02:43.000Z",
+        "contentCategory": ""
+      }
+    ]
+  }
+]
