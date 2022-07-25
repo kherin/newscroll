@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 //widgets
 import 'package:newscroll/widgets/app_title.dart';
 import '../widgets/feed_list.dart';
+import '../widgets/time_divider.dart';
 
 class FeedPage extends StatefulWidget {
   const FeedPage({Key? key}) : super(key: key);
@@ -20,10 +21,14 @@ class _FeedPageState extends State<FeedPage> {
         padding: const EdgeInsets.fromLTRB(10, 20, 20, 20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: const <Widget>[
+          children: <Widget>[
             Padding(
               padding: EdgeInsets.fromLTRB(20, 30, 20, 30),
               child: AppTitle(fontSize: 40),
+            ),
+            Padding(
+              padding: EdgeInsets.fromLTRB(20, 30, 20, 30),
+              child: TimeDivider(DateTime.now(), true),
             ),
             Expanded(
               child: FeedList(),

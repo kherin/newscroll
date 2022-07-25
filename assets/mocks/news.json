@@ -3,36 +3,36 @@
     "2022-07-24T07:02:43.000Z": [
       {
         "id": "1",
-        "text": "",
-        "title": "",
-        "context": "",
-        "imageURL": "",
-        "cardType": "sponsored",
+        "text": "Ever since Tesla moved its headquarters to Texas and started producing cars at its factory near Austin, it has added a number of suppliers in the Mexican state of Nuevo Leon. While that state is quit…",
+        "title": "Tesla Gets Its Own Lane At Mexican Border Crossing",
+        "context": "Texas",
+        "imageURL": "https://cleantechnica.com/files/2022/07/Nuevo-Leon.jpg",
+        "cardType": "photo_card",
         "markedAsRead": "0",
         "publishedDate": "2022-07-24T07:02:43.000Z",
-        "contentCategory": ""
+        "contentCategory": "ki_news"
       },
       {
         "id": "2",
-        "text": "",
-        "title": "",
-        "context": "",
+        "text": "Ella Gupta made her first investment when she was 10. With the help of her parents, she took half the profits of her bracelet-making business and invested in the stock market. At 14, she opened a Rot…",
+        "title": "The Bear Market Has Brought 'Fear and Uncertainty' for Gen-Z. How They're Coping. - Barron's",
+        "context": "US",
         "imageURL": "",
-        "cardType": "sponsored",
+        "cardType": "news_card",
         "markedAsRead": "0",
         "publishedDate": "2022-07-24T07:02:43.000Z",
-        "contentCategory": ""
+        "contentCategory": "ki_news"
       },
       {
         "id": "3",
-        "text": "",
-        "title": "",
-        "context": "",
-        "imageURL": "",
-        "cardType": "sponsored",
+        "text": "Plus: The FCC cracks down on car warranty robocalls, Thai activists get targeted by NSO's Pegasus, and the Russia-Ukraine cyberwar continues.",
+        "title": "The January 6 Secret Service Text Scandal Turns Criminal",
+        "context": "United States",
+        "imageURL": "https://media.wired.com/photos/62db3603a524e4ef61bb6889/191:100/w_1280,c_limit/January-6-Secret-Service-Security-GettyImages-1230451801.jpg",
+        "cardType": "photo_card",
         "markedAsRead": "0",
         "publishedDate": "2022-07-24T07:02:43.000Z",
-        "contentCategory": ""
+        "contentCategory": "ki_news"
       }
     ]
   },
@@ -40,25 +40,25 @@
     "2022-07-23T07:02:43.000Z": [
       {
         "id": "4",
-        "text": "",
-        "title": "",
-        "context": "",
-        "imageURL": "",
-        "cardType": "sponsored",
+        "text": "Indian online insurer Policybazaar confirmed on Sunday that it was subject to an unspecified security incident but found that “no significant” customer data was exposed — or in other words, some was. Policybazaar, which sells a range of insurance coverage, sa…",
+        "title": "Online insurer Policybazaar says customer data was exposed by 'unauthorized access'",
+        "context": "India",
+        "imageURL": "https://techcrunch.com/wp-content/uploads/2019/10/GettyImages-585107455.jpeg?w=599",
+        "cardType": "photo_card",
         "markedAsRead": "0",
         "publishedDate": "2022-07-23T07:02:43.000Z",
-        "contentCategory": ""
+        "contentCategory": "ki_news"
       },
       {
         "id": "5",
-        "text": "",
-        "title": "",
-        "context": "",
-        "imageURL": "",
-        "cardType": "sponsored",
+        "text": "Welcome back to Chain Reaction. Last week, we looked at a crossover episode for meme investing. This week, we’re talking about Musk dumping tokens while holding onto others. You can get this newsletter in your inbox every week by subscribing on TechCrunch’s n…",
+        "title": "The Dogefather sends his regards",
+        "context": "United States",
+        "imageURL": "https://techcrunch.com/wp-content/uploads/2018/11/elon-musk.jpeg?w=600",
+        "cardType": "photo_card",
         "markedAsRead": "0",
         "publishedDate": "2022-07-23T07:02:43.000Z",
-        "contentCategory": ""
+        "contentCategory": "ki_news"
       }
     ]
   }

@@ -32,7 +32,7 @@ class _FeedListState extends State<FeedList> {
             },
             separatorBuilder: (BuildContext context, int index) {
               NewsPaperModel newspaper = snapshot.data[index];
-              return TimeDivider(newspaper.publishedDate);
+              return TimeDivider(newspaper.publishedDate, false);
             });
       },
       future: ApiService.getMockedNews(),

@@ -17,7 +17,10 @@ class Tagged extends StatelessWidget {
         backgroundColor: getColor(tagType),
         child: getIcon(tagType),
       ),
-      label: Text(getLabel(contentCategory, locale)),
+      label: Text(
+        getLabel(contentCategory, locale),
+        style: const TextStyle(color: Colors.white),
+      ),
     );
   }
 
@@ -36,21 +39,21 @@ class Tagged extends StatelessWidget {
   String getLabel(String contentCategory, String locale) {
     if (ContentCategoryMap.containsKey(contentCategory)) {
       Map<String, String>? category = ContentCategoryMap[contentCategory];
-      return category?[locale] ?? 'unknown';
+      return category?[locale] ?? contentCategory;
     } else {
-      return "unknown";
+      return contentCategory;
     }
   }
 
   Icon getIcon(TagType tagtype) {
     if (tagType == TagType.primary) {
-      return Icon(Icons.calendar_today, color: Colors.black);
+      return const Icon(Icons.calendar_today, color: Colors.white);
     } else if (tagType == TagType.secondary) {
-      return Icon(Icons.newspaper, color: Colors.black);
+      return const Icon(Icons.newspaper, color: Colors.white);
     } else if (tagType == TagType.tertiary) {
-      return Icon(Icons.flag, color: Colors.black);
+      return const Icon(Icons.flag, color: Colors.white);
     } else {
-      return Icon(Icons.question_mark, color: Colors.black);
+      return const Icon(Icons.question_mark, color: Colors.white);
     }
   }
 }

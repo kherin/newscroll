@@ -5,7 +5,8 @@ import '../shared/utils.dart';
 
 class TimeDivider extends StatelessWidget {
   final DateTime incomingDateTime;
-  TimeDivider(this.incomingDateTime);
+  final bool isToday;
+  TimeDivider(this.incomingDateTime, this.isToday);
 
   @override
   Widget build(BuildContext context) {
@@ -26,17 +27,33 @@ class TimeDivider extends StatelessWidget {
         ),
         Expanded(
           flex: 3,
-          child: Text(
-            '${Utils.formatDateTime(incomingDateTime)}',
-            textAlign: TextAlign.left,
-            style: TextStyle(
-              fontSize: 20,
-              fontFamily: 'GowunBatang',
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
+          child: getDate(incomingDateTime, isToday),
+        )
       ],
     );
+  }
+
+  Widget getDate(DateTime incomingDateTime, bool isToday) {
+    if (isToday) {
+      return const Text(
+        'Today',
+        textAlign: TextAlign.left,
+        style: TextStyle(
+          fontSize: 20,
+          fontFamily: 'GowunBatang',
+          fontWeight: FontWeight.bold,
+        ),
+      );
+    } else {
+      return Text(
+        Utils.formatDateTime(incomingDateTime),
+        textAlign: TextAlign.left,
+        style: const TextStyle(
+          fontSize: 20,
+          fontFamily: 'GowunBatang',
+          fontWeight: FontWeight.bold,
+        ),
+      );
+    }
   }
 }
