@@ -30,16 +30,21 @@ class _NewsCardState extends State<NewsCard> {
       child: Column(
         children: <Widget>[
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
-              Tagged(TagType.primary, widget.news.contentCategory, 'fr'),
-              Tagged(TagType.secondary, widget.news.contentCategory, 'mu')
+              Padding(
+                padding: const EdgeInsets.fromLTRB(10.0, 0, 0, 0),
+                child:
+                    Tagged(TagType.primary, widget.news.contentCategory, 'fr'),
+              )
             ],
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
-              Tagged(TagType.tertiary, widget.news.context, 'mu')
+              Padding(
+                  padding: const EdgeInsets.fromLTRB(10.0, 0, 0, 0),
+                  child: Tagged(TagType.tertiary, widget.news.context, 'mu'))
             ],
           ),
           Padding(
